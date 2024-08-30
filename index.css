@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family:"Roboto", sans-serif;
+}
+body{
+  background: #000;
+  color: white;
+}
+.left{
+width: 20vw;
+padding-top:9px 0px;
+
+}
+.right{
+  width: 80vw;
+  position: relative;
+
+}
+.home ul li{
+  display: flex;
+  width:15px;
+  gap:15px;
+  list-style:none;
+  padding-top: 15px;
+}
+.footer{
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+
+  position: absolute;
+  bottom: 0;
+
+}
+.footer a{
+  color: grey;
+  text-decoration: none;
+  margin: 8px;
+}
+.laibery{
+  min-height: 80vh;
+  position: relative;
+}
+.nav-heading{
+  display: flex;
+  justify-content: space-between;
+  background: #242424;
+  gap: 20px;
+  
+}
+.nav-heading >*{
+  padding: 20px;
+
+}
+.button button{
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  font-size: 18px;
+  margin-left: 10px;
+  color: white;
+}
+.button .login{
+  height:40px;
+  width: 90px;
+  border-radius: 20px;
+  background: #f3f4f3;
+  color: black;
+}
+.spotify-list{
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 300;
+}
+.spotify-list .card{
+  width: 200px;
+  position: relative;
+  padding: 30px ;
+  border-radius: 20px;
+  background: #252525;;
+}
+.card>*{
+padding-top:5px}
+.card img{
+  width: 100%;
+  object-fit: contain;
+}
+.cardcontainer{
+  margin:30px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  max-height: 70vh;
+overflow-y: scroll;
+}
+::-webkit-scrollbar{
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb{
+  background:#4b4a4a;
+}
+::-webkit-scrollbar-track{
+  background:#252525;
+}
+
+
+/* CSS */
+.play-circle {
+   /* Initially hidden */
+  width: 50px;
+  position: absolute;
+  right: 40px;
+  opacity: 0;
+  top: 180px;
+  display: inline-flex;  /* Adjust the size as needed */
+  height: 50px; /* Adjust the size as needed */
+  background-color: green; /* Green background */
+  color: white; /* White icon color */
+  border-radius: 50%; /* Rounded circle */
+  font-size: 24px; /* Icon size */
+  cursor: pointer; /* Changes the cursor to pointer on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for effects */
+  align-items: center;   /* Centers the icon vertically */
+  justify-content: center; /* Centers the icon horizontally */
+  position: absolute; /* For positioning */
+  transition: all 0.5s ease-in-out;
+}
+
+.play-circle:hover {
+  opacity: 1;
+  top: 160px;
+ /* Shows the element on hover */
+  transform: scale(1.1); /* Slightly enlarges the icon on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increases shadow on hover */
+}
+
+.playbar{
+  position: absolute;
+  bottom:0;
+  width: 100%;
+  padding: 12px;
+}
+.songbtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}

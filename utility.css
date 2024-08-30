@@ -1,0 +1,55 @@
+.flex{
+  display: flex;
+
+}
+.items-center{
+align-items: center;
+}
+.justify-center{
+  justify-content: center;
+}
+.boader{
+  border: 2px solid rgb(18, 12, 12);
+  margin: 3px;
+}
+.bg-color{
+  background-color: black;
+  color: white;
+}
+.invert{
+  filter: invert(1);
+}
+.bg-grey{
+  background:#121212;
+}
+
+.rounded{
+  border-radius: 10px;
+}
+.m-1{
+  margin:8px;
+}
+.p-1{
+  padding: 10px;
+}
+.heading{
+  display: flex;
+  width:100%;
+  gap: 10px;
+  font-weight: 700;
+  padding-top:15px;
+  align-items: center;
+}
+.heading img{
+  width:24px;
+}
+.heading h2{
+  font-size: 16px;
+}
+/* Style the scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+  height: 12px; /* Height of the scrollbar for horizontal scrolling */
+}
+
+/* Style the scrollbar track */
